@@ -42,7 +42,7 @@ button{
     width: 100%;
 
     background-color: #111;
-    color: white;
+    color: grey;
     display: flex; 
     flex-direction: column;
     align-items: center;
