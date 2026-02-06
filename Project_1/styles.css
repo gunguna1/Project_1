@@ -1,76 +1,103 @@
-#nav_main{
-    height: 8vh;
-    margin-left: 0.5vw;
-    margin-top: 1vh;
-    border-radius: 10px;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-nav{
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* NAVBAR */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8vh;
     width: 100%;
-
     background-color: #111;
-    color: white;
-    display: flex; 
-    align-items: center;
+    padding: 0 2vw;
 }
-nav .nav2{
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
-    margin-left: 10vw;
-    margin-right: 10vw;
+
+#nav_main {
+    height: 6vh;
+    border-radius: 8px;
+}
+
+.nav2 {
     display: flex;
     gap: 2vw;
 }
-button{
-    display: flex;
-    margin-right: 2vw;
-    background-color: #111;
+
+.nav2 a {
+    text-decoration: none;
     color: white;
-    border: white solid 1px;
+    font-size: 0.85vw;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav2 a:hover {
+    color: #aaa;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
     border-radius: 5px;
-    padding: 5px 15px;
-    font-size: 1.5vw;
+    padding: 6px 16px;
+    font-size: 14px;
     cursor: pointer;
 }
-#page1{
+
+button:hover {
+    background-color: white;
+    color: #111;
+}
+
+/* HERO SECTION */
+#page1 {
     height: 100vh;
     width: 100%;
-
     background-color: #111;
-    color: grey;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
-#page1 h1{
-    margin: 0;
-    padding: 0;
+
+#page1 h1 {
     font-size: 4vw;
-    line-height: 3.5vw;
-    
+    color: white;
 }
-#page1 .features{
+
+#page1 h2 {
+    font-size: 2vw;
+    color: #aaa;
+    margin: 10px 0 20px;
+}
+
+#page1 p {
+    max-width: 600px;
+    font-size: 1vw;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* FEATURES */
+.features {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 1vw;
 }
-#page1 .features h4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: 1em sans-serif;
 
-    height: 10px;
-    border: white solid 0.5px;
+.features span {
+    border: 1px solid white;
     border-radius: 50px;
-    margin: 2px;
-    padding : 10px 20px;
+    padding: 8px 20px;
+    font-size: 0.9vw;
+    color: #ccc;
 }
